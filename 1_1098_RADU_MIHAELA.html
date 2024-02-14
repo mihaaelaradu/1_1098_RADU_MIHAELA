@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1_1098_RADU_MIHAELA.css">
+    <title>Paint with me</title>
+</head>
+<body>
+    <h1>Hai sa desenam!</h1>
+
+    <canvas id="Canvas"></canvas>
+
+    <div id="editare">
+        <h2> Editor </h2>
+
+        <div id="forme">
+            <button id="elipsa">🔵 Elipsa</button>
+            <button id="dreptunghi">⬛ Dreptunghi</button>
+            <button id="linie">➖ Linie</button>
+            <button id="romb">🔶 Romb</button>
+        </div>
+
+        <div id="culori"> 
+            <label for="color">Culoare de umplere:</label>
+            <input type="color" name="" id="culoare" value="#000000">
+            <label for="culoareContur">Culoare Contur:</label>
+            <input type="color" name="" id="culoareContur" value="#000000">
+            <label for="grosime">Grosime contur:</label>
+            <input type="number" name="" id="grosime">
+            <label for="culoareFundal">Culoare fundal:</label>
+            <input type="color" id="culoareFundal" value="#FFFFFF">
+        </div>
+
+        <button id="sterge">Sterge</button>
+    </div>
+
+    <div id="salvare">  
+        <h2>Salveaza desenul</h2>
+        <button id="savePng"> Salveaza PNG </button>
+        <button id="saveSvg"> Salveaza SVG </button>
+    </div>  
+
+    <div id="figuri">
+        <h2>Figuri existente:</h2>
+        <div id="listaFiguri"></div>
+    </div>
+
+    
+    <div id="modificare">
+        <h2>Modifica figura</h2>
+        <label for="coordX">Coordonata X:</label>
+        <input type="number" id="coordX" />
+        <label for="coordY">Coordonata Y:</label>
+        <input type="number" id="coordY" />
+        <label for="latime">Lățime:</label>
+        <input type="number" id="latime" />
+        <label for="inaltime">Înălțime:</label>
+        <input type="number" id="inaltime" />
+
+        <button id="modificaForma">Modifică</button>
+        <button id="stergeForma">Șterge</button>
+    </div>
+
+    <script src="1_1098_RADU_MIHAELA.js"></script>
+</body>
+</html>
+
+
+
